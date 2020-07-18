@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+expose 1005
+ADD target/flightservices-0.0.1-SNAPSHOT.jar flightservices.jar
+ENTRYPOINT ["java","-jar","/flightservices.jar"]
